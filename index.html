@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="Style/style.css">
+</head>
+
+<body style="font-family: 'Times New Roman', Times, serif">
+    <div class="container-fluid p-0 m-0">
+        <nav class="navbar navbar-dark bg-dark d-flex justify-content-center pt-4 pb-4">
+            <div class="justify-content-around nav1">
+                <div>
+                    <button type="button" class="btn bg-slash text-dark font-weight-bold" id="disabled"
+                        onclick="textRedactor()" disabled>&#60;&#8260;&#62;</button>
+                </div>
+                <div class="d-flex rounded ">
+                    <button type="button" class="btn btn-light font-weight-bold rounded-0" onclick="fontWeight()"
+                        id="bold">B</button>
+                    <button type="button" class="btn btn-light font-weight-bold rounded-0"
+                        onclick="fontStyle()">I</button>
+                    <button type="button" class="btn btn-light font-weight-bold text-decoration-underline rounded-0"
+                        onclick="fontUnderline()">U</button>
+                    <button type="button" class="btn btn-light font-weight-bold text-decoration-line-through rounded-0"
+                        onclick="fontLineThrough()">S</button>
+                </div>
+                <div class="d-flex rounded ">
+                    <button type="button" class="btn btn-light font-weight-bold rounded-0" onclick="textLeft()"><i
+                            class="fas fa-align-left"></i></button>
+                    <button type="button" class="btn btn-light font-weight-bold rounded-0" onclick="textCenter()"><i
+                            class="fas fa-align-center"></i></button>
+                    <button type="button" class="btn btn-light font-weight-bold rounded-0" onclick="textRight()"><i
+                            class="fas fa-align-right"></i></button>
+                </div>
+                <div class="d-flex rounded">
+                    <div class="dropdown">
+                        <button class="btn btn-light dropdown-toggle font-weight-bold rounded-0" type="button"
+                            id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            A
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenu2" onclick="fontFamily()">
+                            <button class="dropdown-item" type="button"
+                                style="font-family: Arial, Helvetica, sans-serif;">Arial</button>
+                            <button class="dropdown-item" type="button"
+                                style="font-family: Georgia, 'Times New Roman', Times, serif">Georgia</button>
+                            <button class="dropdown-item" type="button"
+                                style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif">Impact</button>
+                            <button class="dropdown-item" type="button"
+                                style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">Tahoma</button>
+                            <button class="dropdown-item" type="button"
+                                style="font-family: 'Times New Roman', Times, serif">Times New Roman</button>
+                            <button class="dropdown-item" type="button"
+                                style="font-family: Verdana, Geneva, Tahoma, sans-serif">Verdana</button>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn btn-light dropdown-toggle font-weight-bold rounded-0" type="button"
+                            id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-text-height"></i>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenu2" onclick="fontSize()">
+                            <button class="dropdown-item" type="button" style="font-size: 12px;">12px</button>
+                            <button class="dropdown-item" type="button" style="font-size: 14px;">14px</button>
+                            <button class="dropdown-item" type="button" style="font-size: 16px;">16px</button>
+                            <button class="dropdown-item" type="button" style="font-size: 18px;">18px</button>
+                            <button class="dropdown-item" type="button" style="font-size: 20px;">20px</button>
+                            <button class="dropdown-item" type="button" style="font-size: 22px;">22px</button>
+                            <button class="dropdown-item" type="button" style="font-size: 25px;">25px</button>
+                            <button class="dropdown-item" type="button" style="font-size: 30px;">30px</button>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-light font-weight-bold rounded-0" onclick="textColor()"> <i
+                            class="fas fa-palette"></i></button>
+                    <button type="button" class="btn btn-light font-weight-bold rounded-0" onclick="backgColor()"><i
+                            class="far fa-image"></i></button>
+                </div>
+                <button type="button" class="btn btn-light font-weight-bold" id="lock" onclick="signInForm()"><i
+                        class="fas fa-lock"></i></button>
+            </div>
+
+            <div class=" col-7 justify-content-center nav2">
+                <div class="d-flex rounded ">
+                    <button type="button" class="btn btn-light font-weight-bold rounded-0" onclick="saveText()"><i
+                            class="fas fa-save"></i></button>
+                    <button type="button" class="btn btn-light font-weight-bold rounded-0" onclick="createTable()"><i
+                            class="fas fa-table"></i></button>
+                    <button type="button" class="btn btn-light font-weight-bold text-decoration-underline rounded-0"
+                        onclick="getOL()"><i class="fas fa-list-ol"></i></button>
+                    <button type="button" class="btn btn-light font-weight-bold text-decoration-line-through rounded-0"
+                        onclick="getUL()"><i class="fas fa-list"></i></button>
+                </div>
+            </div>
+        </nav>
+
+
+        <div class="textarea">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora impedit perferendis iste quo.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora impedit perferendis iste quo.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora impedit perferendis iste quo.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora impedit perferendis iste quo.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora impedit perferendis iste quo.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora impedit perferendis iste quo.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora impedit perferendis iste quo.</p>
+        </div>
+
+        <textarea name="" id="" cols="30" rows="10" class="col-12 pt-3 pl-4 displ-none">
+</textarea>
+
+        <div class="disp-n ">
+            <div class="blochek d-flex flex-column align-self-center mt-4 ">
+                <div class="topR d-flex justify-content-between ">
+                    <h4>Choose text color</h4>
+                    <i class="fas fa-times" onclick="exit()"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="disp-n2 disp-n ">
+            <div class="blochek blochek2 d-flex flex-column align-self-center mt-4 ">
+                <div class="topR d-flex justify-content-between ">
+                    <h4>Choose background color or image</h4>
+                    <i class="fas fa-times" onclick="exit2()"></i>
+                </div>
+                <ul id='ul' class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active clrs" href="#" onclick="pickColor()">Colors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link imgs" href="#" onclick="openIm()">Images</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link files" href="#" onclick="importImg()">Files</a>
+                    </li>
+                </ul>
+                <div class="block-active"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="disp-n disp-n3">
+        <div class="blochek d-flex flex-column align-self-center mt-4 ">
+            <div class="topR d-flex justify-content-between ">
+                <h4 style="text-align: center; " class="ss">Sign In</h4>
+                <i class="fas fa-times" onclick="exit3()"></i>
+            </div>
+            <form name="signIn">
+                <div class="sign-in">
+                    <input type="text" name="login" id="login" class="inn" placeholder="Login here..."
+                        autocomplete="off">
+                    <input type="password" name="password" id="password" class="inn" placeholder="Password here...">
+                    <div class="eror"></div>
+                    <input type="button" value="Sign In" class="inn btn btn-secondary" id="inn" onclick="signBut()">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="disp-n disp-n9">
+        <div class="sO d-flex flex-row justify-content-between">
+            <button type="button" class="btn btn-dark end" onclick="cancelBtn()">Cancel</button>
+            <button type="button" class="btn btn-danger end" onclick="signOutBtn()">Sign out</button>
+        </div>
+    </div>
+
+    <div class="disp-n disp-n4">
+        <div class="blochek blochek4 d-flex flex-column align-self-center mt-4 bl-table">
+            <div class="topR d-flex justify-content-between ">
+                <h5>Create table</h5>
+                <i class="fas fa-times" onclick="exit4()"></i>
+            </div>
+
+            <form name="form-create-table">
+                <div class="d-flex justify-content-between flex-wrap bla">
+                    <div class="d-flex justify-content-around flex-column ">
+                        <label class="mp" for="tr">Count TR:</label>
+                        <input type="text" name="tr" class="countTR table" id="tr" placeholder="Type here...">
+                        <label for="tdW" class="mp">Width of TD:</label>
+                        <input type="text" name="tdW" class=" table" id="tdW" placeholder="Type here...">
+                        <label class="mp" for="bW">Width of border:</label>
+                        <input type="text" class="table" name="bW" id="bW" placeholder="Type here...">
+                        <div class="eror eror1"></div>
+                        <input type="button" id="resetB" class="button btn btn-danger" value="Reset" onclick="resetT()">
+                    </div>
+
+
+                    <div class="d-flex justify-content-around flex-column ">
+                        <label class="mp" for="td">Count TD:</label>
+                        <input type="text" name="td" class="countTD table" id="td" placeholder="Type here...">
+                        <label class="mp" for="tdH">Height of TD:</label>
+                        <input type="text" name="tdH" class=" table" id="tdH" placeholder="Type here...">
+                        <div class=" d-flex flex-row justify-content-between">
+                            <div class=" d-flex flex-column">
+                                <label class="mp" for="tdH">Style of border:</label>
+                                <select name="selectType" class="table last " id="selectType">
+                                    <option value="" selected disabled>Choose style...</option>
+                                    <option value="dotted">dotted</option>
+                                    <option value="dashed">dashed</option>
+                                    <option value="solid">solid</option>
+                                    <option value="double">double</option>
+                                    <option value="groove">groove</option>
+                                    <option value="ridge">ridge</option>
+                                    <option value="inset">inset</option>
+                                    <option value="outset">outset</option>
+                                </select>
+                            </div>
+                            <div class=" d-flex flex-column">
+                                <label class="mp" for="selectColor">Color of border:</label>
+                                <select name="selectColor" class="table last " id="selectColor">
+                                    <option value="" selected disabled>Choose color...</option>
+                                    <option value="black">black</option>
+                                    <option value="red">red</option>
+                                    <option value="green">green</option>
+                                    <option value="blue">blue</option>
+                                    <option value="yellow">yellow</option>
+                                    <option value="white">white</option>
+                                    <option value="gray">gray</option>
+                                    <option value="pink">pink</option>
+                                </select>
+                            </div>
+                        </div>
+                        <input type="button" id="createB" class="button btn btn-success" value="Create Table"
+                            onclick="createT()">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <div class="disp-n disp-n5">
+        <div class="blochek d-flex flex-column align-self-center mt-4 ">
+            <div class="topR d-flex justify-content-between  mb">
+                <h5 style="text-align: center; ">Create OL</h5>
+                <i class="fas fa-times" onclick="exit5()"></i>
+            </div>
+            <form name="ol">
+                <div class="sign-in new">
+                    <label class="mp" for="olli">Count Li item:</label>
+                    <input type="text" name="li" id="olli" class="olli table" placeholder="Type here..."
+                        autocomplete="off">
+                    <div class=" d-flex flex-column">
+                        <label class="mp" for="selectOl">Type mark of list:</label>
+                        <select name="selectOl" class="table last  olTypes" id="olTypes">
+                            <option value="" selected disabled>Choose OL type mark</option>
+                            <option value="decimal">1</option>
+                            <option value="upper-roman">I</option>
+                            <option value="lower-roman">i</option>
+                            <option value="upper-alpha">A</option>
+                            <option value="lower-alpha">a</option>
+                        </select>
+                        <div class="eror2 eror"></div>
+                        <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <input type="button" value="Reset" class="inn bOl btn btn-danger" id="rB"
+                                onclick="resetOL()">
+                            <input type="button" value="Create list" class="inn bOl btn btn-success " id="cB"
+                                onclick="createOL()">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="disp-n disp-n6">
+        <div class="blochek d-flex flex-column align-self-center mt-4 ">
+            <div class="topR d-flex justify-content-between  mb">
+                <h5 style="text-align: center; ">Create UL</h5>
+                <i class="fas fa-times" onclick="exit6()"></i>
+            </div>
+            <form name="ul">
+                <div class="sign-in new">
+                    <label class="mp" for="ulli">Count li item:</label>
+                    <input type="text" name="li" id="ulli" class="olli table" placeholder="Type here..."
+                        autocomplete="off">
+                    <div class=" d-flex flex-column">
+                        <label class="mp" for="selectul">Type mark of list:</label>
+                        <select name="selectul" class="table last  olTypes" id="ulTypes">
+                            <option value="" selected disabled>Choose UL type mark</option>
+                            <option value="circle">circle</option>
+                            <option value="disc">disc</option>
+                            <option value="square">square</option>
+                        </select>
+                        <div class="eror2 eror3 eror"></div>
+                        <div class="d-flex flex-row flex-nowrap justify-content-between">
+                            <input type="button" value="Reset" class="inn bOl btn btn-danger" id="rB1"
+                                onclick="resetUL()">
+                            <input type="button" value="Create list" class="inn bOl btn btn-success" id="cB1"
+                                onclick="createUL()">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="Script/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+    <script src="Script/script.js"></script>
+</body>
+
+</html>

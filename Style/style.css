@@ -1,0 +1,242 @@
+.navbar{
+    height: 10vh;
+}
+.bg-slash{
+    background-color: lightgrey;
+}
+.text-decoration-underline{
+    text-decoration: underline;    
+}
+.text-decoration-line-through{
+    text-decoration: line-through;
+}
+textarea{
+    height: 90vh;
+     font-size: 17px; 
+     line-height: 28px; 
+     font-family: Arial, Helvetica, sans-serif;
+     display: none;
+}
+.textarea{
+    height: 90vh;
+     font-size: 17px; 
+     line-height: 30px; 
+     font-family: Arial, Helvetica, sans-serif;
+     padding-left: 25px;
+     padding-top: 25px;    
+}
+.disp-n{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(138, 138, 138, 0.493);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none; 
+    background-image: url(img/);
+}
+.blochek{
+    position: absolute;
+    background-color: white;
+    width: 600px;
+    height: 340px;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 23px;    
+    font-family: Arial, Helvetica, sans-serif;
+}
+.blochek2{    
+    height: 390px;
+    margin-top: 15px;   
+}
+.topR{
+    border-bottom: 1px solid rgb(230, 230, 230);
+    margin-bottom: 15px;
+    padding-bottom: 13px;
+}
+#ul{
+    margin-bottom: 15px;
+}
+.colorRR{
+    width: 70px;
+    height: 70px;
+    margin-bottom: 10px;
+    border-radius: 5px;    
+}
+.bgimg{
+    width: 165px;
+}
+input[type="file"] {
+    display: none;
+}
+.label {
+    width: 550px;  
+    border: 1px solid rgb(210, 210, 210);
+    border-radius: 10px;
+    display: inline-block;
+    cursor: pointer;
+    height: 46px;
+    padding-top: 10px;
+}
+.lab:active{
+    border: 2px solid dodgerblue;
+    height: 47px;    
+    border-radius: 10px;
+}
+#choose{
+    width: 450px;
+    height: 47px;
+    padding-left: 15px;
+    color: rgb(104, 104, 104);
+}
+#browse{
+    display: flex;
+    width: 80px;
+    height: 43px;
+    margin-left: 20px;
+    margin-top: -10px;
+    padding-top: 10px;
+    padding-left: 12px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: rgb(228, 228, 228);
+}
+.ss{
+    margin: auto;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.sign-in{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    position: relative;
+}
+.inn{
+    height: 45px;
+    border-radius: 5px;
+    outline: none;
+    color: gray;
+    padding-left: 15px;
+    font-size: 18px;
+}
+#inn{
+    padding-left: 0;
+    color: white;
+    margin-bottom: -20px;
+}
+#inn:focus{
+   border: 3px solid rgb(184, 184, 184);
+}
+.eror{
+    position: absolute;
+    top: 143px;
+    left: 0px;
+    color: firebrick;
+    font-size: 14px;
+    display: none;
+}
+.eror1{
+    top: 263px;
+}
+.eror2{
+    top: 165px;
+}
+.nav1{
+    display: flex;
+    width: 650px;
+}
+.nav2{
+    display: none;    
+}
+.bl-table{
+    width: 800px;
+    height: 450px;
+    top: 29%;
+}
+.table{
+    width: 370px;
+    height: 40px;
+    outline: none;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: 1px solid rgb(238, 238, 238);;
+}
+.button{
+    height: 45px;
+    margin-top: 35px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+.last{
+    width: 178px;
+    margin-bottom: 0;
+    margin-bottom: 1rem;
+    color: black;
+}
+.last:disabled{
+    color: gray;
+}
+.olTypes:disabled{
+    color: gray;
+}
+ .bla{
+     position: relative;
+ }
+ .olTypes{
+     width: 554px;
+     margin-bottom: 35px;
+      color: gray;
+}
+.bOl{
+    width: 49%;
+    margin-bottom: 12px;
+    border: none;
+}
+.olli{
+    width: 554px;
+    height: 40px;
+     outline: none;
+    border-radius: 5px;
+     padding-left: 15px;
+    border: 1px solid rgb(238, 238, 238); 
+    margin-bottom: 15px;
+}
+#cB{
+    color: white;
+}   
+#rB{
+    color: white;
+} 
+.new{
+    height: 250px;
+}
+.mb{
+    margin-bottom: 10px;
+    }
+ #cB1{
+    color: white;
+} 
+#rB1{   
+    color: white;
+}
+              
+    .sO{
+        position: absolute;
+        background-color: white;
+        width: 340px;
+        height: 75px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 17px;    
+        font-family: Arial, Helvetica, sans-serif;  
+    }
+
+    .end{
+width: 140px;
+    }
